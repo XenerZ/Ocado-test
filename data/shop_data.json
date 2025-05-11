@@ -1,0 +1,163 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Banany BIO",
+      "price": {
+        "main": 3,
+        "fractional": 49
+      }
+    },
+    {
+      "id": 2,
+      "name": "Mleko 3.2%",
+      "price": {
+        "main": 2,
+        "fractional": 89
+      }
+    },
+    {
+      "id": 3,
+      "name": "Chleb Żytni",
+      "price": {
+        "main": 4,
+        "fractional": 15
+      }
+    },
+    {
+      "id": 4,
+      "name": "Jaja 6 sztuk",
+      "price": {
+        "main": 6,
+        "fractional": 99
+      }
+    },
+    {
+      "id": 5,
+      "name": "Łosoś wędzony",
+      "price": {
+        "main": 5,
+        "fractional": 20
+      }
+    }
+  ],
+  "orders": [
+    {
+      "id": "2025-05-11T18:31:06.453Z",
+      "items": [
+        {
+          "id": 1,
+          "name": "Banany BIO",
+          "quantity": 1,
+          "price": {
+            "main": 3,
+            "fractional": 49
+          }
+        },
+        {
+          "id": 4,
+          "name": "Jaja 6 sztuk",
+          "quantity": 1,
+          "price": {
+            "main": 6,
+            "fractional": 99
+          }
+        },
+        {
+          "id": 2,
+          "name": "Mleko 3.2%",
+          "quantity": 1,
+          "price": {
+            "main": 2,
+            "fractional": 89
+          }
+        },
+        {
+          "id": 5,
+          "name": "Łosoś wędzony",
+          "quantity": 1,
+          "price": {
+            "main": 5,
+            "fractional": 20
+          }
+        },
+        {
+          "id": 3,
+          "name": "Chleb Żytni",
+          "quantity": 1,
+          "price": {
+            "main": 4,
+            "fractional": 15
+          }
+        }
+      ],
+      "totalCost": "22.72"
+    },
+    {
+      "id": "2025-05-11T18:38:14.403Z",
+      "items": [
+        {
+          "id": 1,
+          "name": "Banany BIO",
+          "quantity": 8,
+          "price": {
+            "main": 3,
+            "fractional": 49
+          }
+        },
+        {
+          "id": 2,
+          "name": "Mleko 3.2%",
+          "quantity": 3,
+          "price": {
+            "main": 2,
+            "fractional": 89
+          }
+        }
+      ],
+      "totalCost": "36.59"
+    },
+    {
+      "id": "2025-05-11T18:41:10.435Z",
+      "items": [
+        {
+          "id": 1,
+          "name": "Banany BIO",
+          "quantity": 1,
+          "price": {
+            "main": 3,
+            "fractional": 49
+          }
+        },
+        {
+          "id": 4,
+          "name": "Jaja 6 sztuk",
+          "quantity": 4,
+          "price": {
+            "main": 6,
+            "fractional": 99
+          }
+        },
+        {
+          "id": 2,
+          "name": "Mleko 3.2%",
+          "quantity": 1,
+          "price": {
+            "main": 2,
+            "fractional": 89
+          }
+        },
+        {
+          "id": 3,
+          "name": "Chleb Żytni",
+          "quantity": 1,
+          "price": {
+            "main": 4,
+            "fractional": 15
+          }
+        }
+      ],
+      "totalCost": "38.49"
+    }
+  ]
+}

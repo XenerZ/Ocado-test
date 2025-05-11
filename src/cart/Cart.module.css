@@ -1,0 +1,19 @@
+.cart {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  background-color: beige;
+  padding: 20px 20px;
+}
+.cartList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.overallCost {
+  display: flex;
+  justify-content: flex-end;
+}

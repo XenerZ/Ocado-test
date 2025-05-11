@@ -1,0 +1,16 @@
+.listElement {
+  padding: 0;
+  margin: 0;
+}
+.productCart {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+.quantity {
+  display: flex;
+  height: auto;
+  gap: 10px;
+  align-items: center;
+}

@@ -1,0 +1,13 @@
+.product {
+  width: calc(33.3333% - 5px);
+  height: auto;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.price {
+  font-size: 1.2rem;
+  font-style: italic;
+}

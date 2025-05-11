@@ -1,0 +1,16 @@
+.productsContainer {
+  width: 100vw;
+  height: 500px;
+  background-color: #9c9c9c;
+}
+.productsBox {
+  width: 100%;
+  height: auto;
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+}
