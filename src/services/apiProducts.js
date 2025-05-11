@@ -1,5 +1,5 @@
 const API_URL_PROD = "http://localhost:8002/products";
-const API_URL_ORDER = "http://localhost:8002/orders";
+const API_URL_ORDER = "http://localhost:8002/order";
 
 export async function getProducts() {
   const res = await fetch(`${API_URL_PROD}`);

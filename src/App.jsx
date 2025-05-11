@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AppLayout from "./ui/AppLayout.jsx";
 import ProductsList, {
   loader as productsLoader,
@@ -8,25 +8,30 @@ import PageNotFound from "./ui/PageNotFound.jsx";
 import ProductPage from "./products/ProductPage.jsx";
 import OrderSummary from "./cart/OrderSummary";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <AppLayout />,
+      children: [
+        { index: true, element: <ProductsList />, loader: productsLoader },
+        {
+          path: "/product/:productId",
+          element: <ProductPage />,
+        },
+        { path: "/cart", element: <Cart /> },
+        {
+          path: "/order-summary",
+          element: <OrderSummary />,
+        },
+      ],
+    },
+    { path: "*", element: <PageNotFound /> },
+  ],
   {
-    path: "/",
-    element: <AppLayout />,
-    children: [
-      { index: true, element: <ProductsList />, loader: productsLoader },
-      {
-        path: "/product/:productId",
-        element: <ProductPage />,
-      },
-      { path: "/cart", element: <Cart /> },
-      {
-        path: "/order-summary",
-        element: <OrderSummary />,
-      },
-    ],
-  },
-  { path: "*", element: <PageNotFound /> },
-]);
+    basename: "/Ocado-test",
+  }
+);
 
 export default function App() {
   return <RouterProvider router={router} />;
