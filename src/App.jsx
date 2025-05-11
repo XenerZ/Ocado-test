@@ -8,30 +8,25 @@ import PageNotFound from "./ui/PageNotFound.jsx";
 import ProductPage from "./products/ProductPage.jsx";
 import OrderSummary from "./cart/OrderSummary";
 
-const router = createBrowserRouter(
-  [
-    {
-      path: "/",
-      element: <AppLayout />,
-      children: [
-        { index: true, element: <ProductsList />, loader: productsLoader },
-        {
-          path: "/product/:productId",
-          element: <ProductPage />,
-        },
-        { path: "/cart", element: <Cart /> },
-        {
-          path: "/order-summary",
-          element: <OrderSummary />,
-        },
-      ],
-    },
-    { path: "*", element: <PageNotFound /> },
-  ],
+const router = createBrowserRouter([
   {
-    basename: "/Ocado-test",
-  }
-);
+    path: "/",
+    element: <AppLayout />,
+    children: [
+      { index: true, element: <ProductsList />, loader: productsLoader },
+      {
+        path: "/product/:productId",
+        element: <ProductPage />,
+      },
+      { path: "/cart", element: <Cart /> },
+      {
+        path: "/order-summary",
+        element: <OrderSummary />,
+      },
+    ],
+  },
+  { path: "*", element: <PageNotFound /> },
+]);
 
 export default function App() {
   return <RouterProvider router={router} />;
